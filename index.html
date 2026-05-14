@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashok More · Full Stack Software Engineer</title>
+  <meta name="description" content="Full stack software engineer — Python, React, Azure, GenAI. Portfolio of Ashok More.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #fff;
+      color: #1a1a1a;
+      line-height: 1.55;
+    }
+    a { color: #185FA5; }
+    a:hover { text-decoration: underline; }
+
+    .site-header {
+      background: #0F2A4A;
+      color: #fff;
+      padding: 2.5rem 1.25rem 2rem;
+    }
+    .site-header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .site-header h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .site-header .title {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 500;
+      opacity: 0.95;
+    }
+    .site-header .subtitle {
+      margin: 0 0 1.5rem;
+      font-size: 0.95rem;
+      opacity: 0.88;
+    }
+    .header-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem 1rem;
+      align-items: center;
+    }
+    .header-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .header-links a:not(.btn-filled):hover {
+      text-decoration: underline;
+      color: #e8f2ff;
+    }
+    .btn {
+      display: inline-block;
+      border: 1px solid #185FA5;
+      color: #185FA5;
+      background: transparent;
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .btn:hover {
+      background: rgba(24, 95, 165, 0.08);
+      text-decoration: none;
+    }
+    .btn-filled {
+      background: #185FA5;
+      color: #fff !important;
+      border-color: #185FA5;
+    }
+    .btn-filled:hover {
+      background: #144a84;
+      border-color: #144a84;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 2rem;
+    }
+    section {
+      margin-bottom: 2.75rem;
+    }
+    section:last-of-type {
+      margin-bottom: 2rem;
+    }
+    .section-heading {
+      margin: 0 0 1.25rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #185FA5;
+      border-bottom: 2px solid #185FA5;
+      padding-bottom: 4px;
+    }
+    .about p {
+      margin: 0;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .exp-card {
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 1rem;
+    }
+    .exp-card:last-child { margin-bottom: 0; }
+    .exp-card-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: baseline;
+      gap: 0.35rem 1rem;
+      margin-bottom: 0.35rem;
+    }
+    @media (max-width: 480px) {
+      .exp-card-header {
+        grid-template-columns: 1fr;
+      }
+      .exp-dates { justify-self: end; text-align: right; }
+    }
+    .exp-card-header strong {
+      font-size: 1rem;
+    }
+    .exp-dates {
+      font-size: 0.85rem;
+      color: #777;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .exp-role {
+      margin: 0 0 0.75rem;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #185FA5;
+    }
+    .exp-card ul {
+      margin: 0;
+      padding-left: 1.15rem;
+      color: #333;
+      font-size: 0.95rem;
+    }
+    .exp-card li { margin-bottom: 0.4rem; }
+    .exp-card li:last-child { margin-bottom: 0; }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 640px) {
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+    .project-card {
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .project-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0F2A4A;
+    }
+    .project-tags {
+      font-size: 0.78rem;
+      color: #555;
+      margin-bottom: 0.75rem;
+      line-height: 1.45;
+    }
+    .project-card p {
+      margin: 0 0 1rem;
+      font-size: 0.92rem;
+      color: #444;
+      flex-grow: 1;
+    }
+    .project-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .skill-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+    .skill-label {
+      font-weight: 700;
+      color: #0F2A4A;
+      min-width: 8.5rem;
+      flex-shrink: 0;
+    }
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      flex: 1;
+      min-width: 0;
+    }
+    .skill-pill {
+      display: inline-block;
+      padding: 0.25rem 0.55rem;
+      border: 1px solid #e5e5e5;
+      border-radius: 999px;
+      background: #fafafa;
+      color: #333;
+      font-size: 0.82rem;
+    }
+
+    .site-footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2.5rem;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1>Ashok More</h1>
+      <p class="title">Full Stack Software Engineer</p>
+      <p class="subtitle">Python · React · Azure · GenAI</p>
+      <nav class="header-links" aria-label="Contact and profiles">
+        <a href="#">LinkedIn</a>
+        <a href="https://github.com/ashoksmore">GitHub</a>
+        <a href="mailto:ashoksmore7@gmail.com">Email</a>
+        <a class="btn btn-filled" href="./Ashok_More_Resume.pdf">Download Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-heading">About</h2>
+      <p>Full stack Software Engineer with 5+ years building production applications using Python, React, Java, and Azure. Experienced designing GenAI-powered systems with deterministic data pipelines, finance dashboards, and API-driven architectures. Currently at Medsix building clinical analytics platforms.</p>
+    </section>
+
+    <section class="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading" class="section-heading">Experience</h2>
+      <div class="exp-column">
+        <article class="exp-card">
+          <div class="exp-card-header">
+            <strong>Medsix, Boston MA</strong>
+            <span class="exp-dates">03/2024 – Present</span>
+          </div>
+          <p class="exp-role">Software Engineer (Python + Full Stack)</p>
+          <ul>
+            <li>FastAPI + React clinical analytics platform; 35% latency reduction via async optimization</li>
+            <li>15+ REST endpoints, PostgreSQL query optimization, 95% test coverage with Pytest and Jest</li>
+          </ul>
+        </article>
+        <article class="exp-card">
+          <div class="exp-card-header">
+            <strong>DriveWealth, Jersey City NJ</strong>
+            <span class="exp-dates">06/2022 – 12/2022</span>
+          </div>
+          <p class="exp-role">Software Engineering API Intern</p>
+          <ul>
+            <li>Django analytics backend processing 500GB+ monthly logs; React dashboard with Material-UI</li>
+            <li>Java Spring Boot brokerage APIs on AWS supporting 100+ global partners</li>
+          </ul>
+        </article>
+        <article class="exp-card">
+          <div class="exp-card-header">
+            <strong>Ingram Micro</strong>
+            <span class="exp-dates">07/2017 – 08/2021</span>
+          </div>
+          <p class="exp-role">Software Engineer (Python + Full Stack)</p>
+          <ul>
+            <li>React marketplace platform handling 1k+ daily transactions at 99.9% uptime</li>
+            <li>Python Django + Java Spring Boot microservices on AWS EKS for order and catalog workflows</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-heading">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>GenAI Finance Health Dashboard</h3>
+          <p class="project-tags">Python · FastAPI · React · Azure OpenAI · PostgreSQL</p>
+          <p>Finance KPI dashboard with deterministic Python pipeline feeding Azure OpenAI (GPT-4o) for CFO-level spend analysis. Built for Deloitte Hackathon.</p>
+          <div class="project-actions">
+            <a class="btn" href="https://github.com/ashoksmore/finance-dashboard">GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <h3>SpendSense — AI Expense Tracker</h3>
+          <p class="project-tags">Python · FastAPI · React · Ollama · Groq · Render</p>
+          <p>Full-stack expense tracker with local LLM (Llama 3.2) for natural language parsing, auto-categorization, and spending insights. Deployed on Render.</p>
+          <div class="project-actions">
+            <a class="btn" href="https://github.com/ashoksmore/expense-tracker-api">GitHub</a>
+            <a class="btn" href="https://expense-tracker-fe-wg3g.onrender.com">Live Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-heading">Skills</h2>
+      <div class="skills-list">
+        <div class="skill-row">
+          <span class="skill-label">Languages:</span>
+          <span class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">SQL</span>
+          </span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Frameworks:</span>
+          <span class="skill-pills">
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">Django</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">Spring Boot</span>
+            <span class="skill-pill">SQLAlchemy</span>
+          </span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">GenAI &amp; LLMs:</span>
+          <span class="skill-pills">
+            <span class="skill-pill">Azure OpenAI</span>
+            <span class="skill-pill">Ollama</span>
+            <span class="skill-pill">Groq</span>
+            <span class="skill-pill">Prompt Engineering</span>
+          </span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Cloud:</span>
+          <span class="skill-pills">
+            <span class="skill-pill">Azure</span>
+            <span class="skill-pill">AWS (EC2, Lambda, DynamoDB)</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Kubernetes</span>
+          </span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Databases:</span>
+          <span class="skill-pills">
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">SQLite</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">Redis</span>
+          </span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Tools:</span>
+          <span class="skill-pills">
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">Kafka</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">Pytest</span>
+            <span class="skill-pill">Jest</span>
+            <span class="skill-pill">Jira</span>
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 Ashok More · Built with GitHub Pages
+  </footer>
+</body>
+</html>
