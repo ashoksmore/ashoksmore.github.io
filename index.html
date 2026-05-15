@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ashok More · Full Stack AI Software Engineer</title>
-  <meta name="description" content="Full stack AI software engineer — Python, Java, React, Azure, GenAI. Portfolio of Ashok More.">
+  <title>Ashok Suryakant More · Full Stack Software Engineer</title>
+  <meta name="description" content="Ashok Suryakant More — full stack software engineer (Python, Java, React, AWS). FinTech, MedTech, production ML/AI. Boston, open to relocation.">
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -40,9 +40,24 @@
       opacity: 0.95;
     }
     .site-header .subtitle {
-      margin: 0 0 1.5rem;
+      margin: 0 0 0.35rem;
       font-size: 0.95rem;
       opacity: 0.88;
+    }
+    .site-header .header-meta {
+      margin: 0 0 1.25rem;
+      font-size: 0.82rem;
+      opacity: 0.82;
+      line-height: 1.4;
+    }
+    .site-header .header-meta a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .site-header .header-meta a:hover {
+      text-decoration: underline;
+      color: #e8f2ff;
     }
     .header-links {
       display: flex;
@@ -215,7 +230,7 @@
     .skill-label {
       font-weight: 700;
       color: #0F2A4A;
-      min-width: 8.5rem;
+      min-width: 9.75rem;
       flex-shrink: 0;
     }
     .skill-pills {
@@ -241,14 +256,24 @@
       font-size: 0.8rem;
       color: #888;
     }
+
+    .edu-list {
+      margin: 0;
+      padding-left: 1.15rem;
+      color: #333;
+      font-size: 0.95rem;
+    }
+    .edu-list li { margin-bottom: 0.45rem; }
+    .edu-list li:last-child { margin-bottom: 0; }
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <h1>Ashok More</h1>
-      <p class="title">Full Stack AI Software Engineer</p>
-      <p class="subtitle">Python · Java · React · AWS · Azure · GenAI</p>
+      <h1>Ashok Suryakant More</h1>
+      <p class="title">Full Stack Software Engineer</p>
+      <p class="subtitle">Python · Java · React · AWS · Azure · ML / AI</p>
+      <p class="header-meta">Boston, MA · Open to relocation · <a href="tel:+16174125427">(617) 412-5427</a></p>
       <nav class="header-links" aria-label="Contact and profiles">
         <a href="https://www.linkedin.com/in/ashok-more/">LinkedIn</a>
         <a href="https://github.com/ashoksmore">GitHub</a>
@@ -261,7 +286,7 @@
   <main>
     <section class="about" aria-labelledby="about-heading">
       <h2 id="about-heading" class="section-heading">About</h2>
-      <p>Full stack AI software engineer with 5+ years building production applications using Python, React, Java, AWS, and Azure. Experienced designing GenAI-powered systems with deterministic data pipelines, finance dashboards, and API-driven architectures. Currently at Medsix building clinical analytics platforms.</p>
+      <p>Full stack software engineer with 5+ years building and scaling production systems in Python, React, Java, and AWS—FinTech and data-intensive stacks, with 0→1 ownership. I ship ML/AI in production (deterministic patterns, RAG-style grounding), run tight code review for AI-generated changes, and partner across teams for quality. Currently at Medsix (MedTech) on clinical analytics.</p>
     </section>
 
     <section class="experience" aria-labelledby="experience-heading">
@@ -269,35 +294,35 @@
       <div class="exp-column">
         <article class="exp-card">
           <div class="exp-card-header">
-            <strong>Medsix, Boston MA</strong>
+            <strong>Medsix, Boston MA (MedTech)</strong>
             <span class="exp-dates">03/2024 – Present</span>
           </div>
-          <p class="exp-role">Software Engineer (Python + Full Stack)</p>
+          <p class="exp-role">Software Engineer (Python + Full-Stack)</p>
           <ul>
-            <li>FastAPI + React clinical analytics platform; 35% latency reduction via async optimization</li>
-            <li>15+ REST endpoints, PostgreSQL query optimization, 95% test coverage with Pytest and Jest</li>
+            <li>Clinical analytics platform: FastAPI, React (TypeScript), Kafka; −35% end-to-end latency via backend tuning and component-level state design.</li>
+            <li>15+ async REST endpoints, PostgreSQL tuning (−20% retrieval), and 95% coverage (Pytest, Jest/RTL); set team standards for reviewing AI-generated backend code.</li>
           </ul>
         </article>
         <article class="exp-card">
           <div class="exp-card-header">
-            <strong>DriveWealth, Jersey City NJ</strong>
+            <strong>DriveWealth, Jersey City NJ (FinTech)</strong>
             <span class="exp-dates">06/2022 – 12/2022</span>
           </div>
-          <p class="exp-role">Software Engineering API Intern</p>
+          <p class="exp-role">Software Engineering API Intern (Python + Java)</p>
           <ul>
-            <li>Django analytics backend processing 500GB+ monthly logs; React dashboard with Material-UI</li>
-            <li>Java Spring Boot brokerage APIs on AWS supporting 100+ global partners</li>
+            <li>Django analytics on 500GB+ monthly API logs; React + Material-UI ops dashboard.</li>
+            <li>Java Spring Boot brokerage APIs on AWS for 100+ partners; Redis sessions at 99.99% availability; Okta/JWT security aligned to FINRA expectations.</li>
           </ul>
         </article>
         <article class="exp-card">
           <div class="exp-card-header">
-            <strong>Ingram Micro</strong>
+            <strong>Ingram Micro (eCommerce &amp; logistics)</strong>
             <span class="exp-dates">07/2017 – 08/2021</span>
           </div>
-          <p class="exp-role">Software Engineer (Python + Full Stack)</p>
+          <p class="exp-role">Software Engineer (Python + Full-Stack)</p>
           <ul>
-            <li>React marketplace platform handling 1k+ daily transactions at 99.9% uptime</li>
-            <li>Python Django + Java Spring Boot microservices on AWS EKS for order and catalog workflows</li>
+            <li>Django microservices for marketplace (users, inventory, orders, payments); partitioned SQL and stored procedures for heavy transactional workloads.</li>
+            <li>Spring Boot on EKS (orders, catalog, auth)—99.9% uptime, 1k+ daily transactions; Terraform + EKS migration to standardize releases and remove environment drift.</li>
           </ul>
         </article>
       </div>
@@ -307,20 +332,20 @@
       <h2 id="projects-heading" class="section-heading">Projects</h2>
       <div class="projects-grid">
         <article class="project-card">
-          <h3>GenAI Finance Health Dashboard</h3>
-          <p class="project-tags">Python · FastAPI · React · Azure OpenAI · PostgreSQL</p>
-          <p>Finance KPI dashboard with deterministic Python pipeline feeding Azure OpenAI (GPT-4o) for CFO-level spend analysis. Built for Deloitte Hackathon.</p>
-          <div class="project-actions">
-            <a class="btn" href="https://github.com/ashoksmore/finance-dashboard">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <h3>SpendSense — AI Expense Tracker</h3>
-          <p class="project-tags">Python · FastAPI · React · Ollama · Groq · Render</p>
-          <p>Full-stack expense tracker with local LLM (Llama 3.2) for natural language parsing, auto-categorization, and spending insights. Deployed on Render.</p>
+          <h3>AI Assisted Expense Tracker</h3>
+          <p class="project-tags">Feb 2026 – Apr 2026 · Python · FastAPI · SQLAlchemy · SQLite · React (Vite) · Groq · Ollama · Render</p>
+          <p>FastAPI + SQLite CRUD with Pydantic validation; React (Vite) on Render. Pluggable Groq/Ollama inference for NL parsing and categorization. Deterministic-first design: Python aggregations and JSON-grounded prompts for reliable dashboards when LLMs fail.</p>
           <div class="project-actions">
             <a class="btn" href="https://github.com/ashoksmore/expense-tracker-api">GitHub</a>
             <a class="btn" href="https://expense-tracker-fe-wg3g.onrender.com">Live Demo</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <h3>GenAI Finance Health Dashboard</h3>
+          <p class="project-tags">Python · FastAPI · React · Azure OpenAI · PostgreSQL</p>
+          <p>Hackathon build: CFO-style KPI dashboard with a deterministic Python pipeline feeding Azure OpenAI (GPT-4o) for spend analysis.</p>
+          <div class="project-actions">
+            <a class="btn" href="https://github.com/ashoksmore/finance-dashboard">GitHub</a>
           </div>
         </article>
       </div>
@@ -335,64 +360,79 @@
             <span class="skill-pill">Python</span>
             <span class="skill-pill">Java</span>
             <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">C++</span>
             <span class="skill-pill">SQL</span>
           </span>
         </div>
         <div class="skill-row">
           <span class="skill-label">Frameworks:</span>
           <span class="skill-pills">
-            <span class="skill-pill">FastAPI</span>
             <span class="skill-pill">Django</span>
+            <span class="skill-pill">FastAPI</span>
             <span class="skill-pill">React</span>
             <span class="skill-pill">Spring Boot</span>
             <span class="skill-pill">SQLAlchemy</span>
+            <span class="skill-pill">Hibernate</span>
+            <span class="skill-pill">Material-UI</span>
+            <span class="skill-pill">Pytest</span>
+            <span class="skill-pill">JUnit</span>
+            <span class="skill-pill">Jest</span>
           </span>
         </div>
         <div class="skill-row">
-          <span class="skill-label">GenAI &amp; LLMs:</span>
+          <span class="skill-label">AI &amp; LLMs:</span>
           <span class="skill-pills">
-            <span class="skill-pill">Azure OpenAI</span>
-            <span class="skill-pill">Ollama</span>
+            <span class="skill-pill">LLMs</span>
             <span class="skill-pill">Groq</span>
-            <span class="skill-pill">Prompt Engineering</span>
+            <span class="skill-pill">Ollama</span>
+            <span class="skill-pill">RAG</span>
+            <span class="skill-pill">Prompt engineering</span>
+            <span class="skill-pill">Deterministic AI</span>
+            <span class="skill-pill">AI code review</span>
           </span>
         </div>
         <div class="skill-row">
-          <span class="skill-label">Cloud:</span>
+          <span class="skill-label">Cloud &amp; data:</span>
           <span class="skill-pills">
+            <span class="skill-pill">AWS</span>
             <span class="skill-pill">Azure</span>
-            <span class="skill-pill">AWS (EC2, Lambda, DynamoDB)</span>
-            <span class="skill-pill">Docker</span>
-            <span class="skill-pill">Kubernetes</span>
-          </span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">Databases:</span>
-          <span class="skill-pills">
             <span class="skill-pill">PostgreSQL</span>
             <span class="skill-pill">MySQL</span>
-            <span class="skill-pill">SQLite</span>
             <span class="skill-pill">MongoDB</span>
             <span class="skill-pill">Redis</span>
+            <span class="skill-pill">SQLite</span>
           </span>
         </div>
         <div class="skill-row">
-          <span class="skill-label">Tools:</span>
+          <span class="skill-label">Platform:</span>
           <span class="skill-pills">
-            <span class="skill-pill">Git</span>
             <span class="skill-pill">Kafka</span>
-            <span class="skill-pill">REST APIs</span>
-            <span class="skill-pill">Pytest</span>
-            <span class="skill-pill">Jest</span>
+            <span class="skill-pill">SQS</span>
+            <span class="skill-pill">WebSockets</span>
+            <span class="skill-pill">REST</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Kubernetes</span>
+            <span class="skill-pill">Terraform</span>
+            <span class="skill-pill">Sumo Logic</span>
+            <span class="skill-pill">CloudWatch</span>
+            <span class="skill-pill">Git</span>
             <span class="skill-pill">Jira</span>
           </span>
         </div>
       </div>
     </section>
+
+    <section class="education" aria-labelledby="edu-heading">
+      <h2 id="edu-heading" class="section-heading">Education &amp; highlights</h2>
+      <ul class="edu-list">
+        <li><strong>Northeastern University</strong> — M.S. Computer Science (2021–2023). Coursework: databases, algorithms, data mining, ML, NLP.</li>
+        <li>AWS Certified Cloud Practitioner (in progress). Best Performer of the Year, Ingram Micro (2019). Led juniors on a Django + NLP resume classifier (90.25% accuracy).</li>
+      </ul>
+    </section>
   </main>
 
   <footer class="site-footer">
-    © 2026 Ashok More · Built with GitHub Pages
+    © 2026 Ashok Suryakant More · Built with GitHub Pages
   </footer>
 </body>
 </html>
