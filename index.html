@@ -7,21 +7,46 @@
   <meta name="description" content="Ashok S. More — full stack software engineer (Python, Java, React, AWS). FinTech, MedTech, production ML/AI. Boston, open to relocation.">
   <style>
     *, *::before, *::after { box-sizing: border-box; }
+    :root {
+      --color-navy: #0F2A4A;
+      --color-accent: #185FA5;
+      --color-accent-hover: #144a84;
+      --color-accent-soft: rgba(24, 95, 165, 0.09);
+      --color-bg-page: #f4f6f9;
+      --color-bg-card: #ffffff;
+      --color-text: #1e293b;
+      --color-text-muted: #475569;
+      --color-text-soft: #64748b;
+      --color-border: #e2e8f0;
+      --shadow-card: 0 1px 2px rgba(15, 42, 74, 0.04), 0 4px 12px rgba(15, 42, 74, 0.06);
+      --radius-card: 10px;
+    }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #fff;
-      color: #1a1a1a;
+      background: var(--color-bg-page);
+      color: var(--color-text);
       line-height: 1.55;
     }
-    a { color: #185FA5; }
-    a:hover { text-decoration: underline; }
+    ::selection {
+      background: rgba(24, 95, 165, 0.18);
+      color: var(--color-text);
+    }
+    main a:not(.btn) {
+      color: var(--color-accent);
+      text-underline-offset: 2px;
+    }
+    main a:not(.btn):hover {
+      color: var(--color-accent-hover);
+    }
 
     .site-header {
-      background: #0F2A4A;
+      background: linear-gradient(180deg, var(--color-navy) 0%, #0c2540 100%);
       color: #fff;
       padding: 2.5rem 1.25rem 2rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 24px rgba(15, 42, 74, 0.12);
     }
     .site-header-inner {
       max-width: 860px;
@@ -59,6 +84,14 @@
       text-decoration: underline;
       color: #e8f2ff;
     }
+    .site-header a:focus-visible {
+      outline: 2px solid #93c5fd;
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    .site-header .btn-filled:focus-visible {
+      outline-color: #fff;
+    }
     .header-links {
       display: flex;
       flex-wrap: wrap;
@@ -77,8 +110,8 @@
     }
     .btn {
       display: inline-block;
-      border: 1px solid #185FA5;
-      color: #185FA5;
+      border: 1px solid var(--color-accent);
+      color: var(--color-accent);
       background: transparent;
       border-radius: 6px;
       padding: 6px 14px;
@@ -86,56 +119,68 @@
       font-weight: 600;
       text-decoration: none;
       cursor: pointer;
-      transition: background 0.15s, color 0.15s;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
     }
     .btn:hover {
-      background: rgba(24, 95, 165, 0.08);
+      background: var(--color-accent-soft);
+      border-color: var(--color-accent-hover);
+      color: var(--color-accent-hover);
       text-decoration: none;
     }
     .btn-filled {
-      background: #185FA5;
+      background: var(--color-accent);
       color: #fff !important;
-      border-color: #185FA5;
+      border-color: var(--color-accent);
     }
     .btn-filled:hover {
-      background: #144a84;
-      border-color: #144a84;
+      background: var(--color-accent-hover);
+      border-color: var(--color-accent-hover);
       color: #fff;
       text-decoration: none;
+    }
+    .btn:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+    .btn-filled:focus-visible {
+      outline-color: var(--color-navy);
     }
 
     main {
       max-width: 860px;
       margin: 0 auto;
-      padding: 2.5rem 1.25rem 2rem;
+      padding: 2.75rem 1.25rem 2.25rem;
     }
     section {
-      margin-bottom: 2.75rem;
+      margin-bottom: 2.85rem;
     }
     section:last-of-type {
-      margin-bottom: 2rem;
+      margin-bottom: 2.25rem;
     }
     .section-heading {
-      margin: 0 0 1.25rem;
-      font-size: 0.72rem;
+      margin: 0 0 1.35rem;
+      font-size: 0.78rem;
       font-weight: 700;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #185FA5;
-      border-bottom: 2px solid #185FA5;
-      padding-bottom: 4px;
+      color: var(--color-accent);
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 6px;
     }
     .about p {
       margin: 0;
-      font-size: 1rem;
-      color: #333;
+      font-size: 1.02rem;
+      color: var(--color-text-muted);
+      max-width: 72ch;
     }
 
     .exp-card {
-      border: 1px solid #e5e5e5;
-      border-radius: 10px;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-card);
       padding: 20px;
       margin-bottom: 1rem;
+      box-shadow: var(--shadow-card);
     }
     .exp-card:last-child { margin-bottom: 0; }
     .exp-card-header {
@@ -153,10 +198,11 @@
     }
     .exp-card-header strong {
       font-size: 1rem;
+      color: var(--color-text);
     }
     .exp-dates {
       font-size: 0.85rem;
-      color: #777;
+      color: var(--color-text-soft);
       text-align: right;
       white-space: nowrap;
     }
@@ -164,12 +210,12 @@
       margin: 0 0 0.75rem;
       font-size: 0.92rem;
       font-weight: 600;
-      color: #185FA5;
+      color: var(--color-accent);
     }
     .exp-card ul {
       margin: 0;
       padding-left: 1.15rem;
-      color: #333;
+      color: var(--color-text-muted);
       font-size: 0.95rem;
     }
     .exp-card li { margin-bottom: 0.4rem; }
@@ -184,29 +230,32 @@
       .projects-grid { grid-template-columns: 1fr; }
     }
     .project-card {
-      border: 1px solid #e5e5e5;
-      border-radius: 10px;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-card);
       padding: 20px;
       display: flex;
       flex-direction: column;
       height: 100%;
+      box-shadow: var(--shadow-card);
     }
     .project-card h3 {
       margin: 0 0 0.5rem;
-      font-size: 1.05rem;
+      font-size: 1.06rem;
       font-weight: 700;
-      color: #0F2A4A;
+      color: var(--color-navy);
+      letter-spacing: -0.01em;
     }
     .project-tags {
       font-size: 0.78rem;
-      color: #555;
+      color: var(--color-text-soft);
       margin-bottom: 0.75rem;
       line-height: 1.45;
     }
     .project-card p {
       margin: 0 0 1rem;
       font-size: 0.92rem;
-      color: #444;
+      color: var(--color-text-muted);
       flex-grow: 1;
     }
     .project-actions {
@@ -229,7 +278,7 @@
     }
     .skill-label {
       font-weight: 700;
-      color: #0F2A4A;
+      color: var(--color-navy);
       min-width: 9.75rem;
       flex-shrink: 0;
     }
@@ -242,25 +291,27 @@
     }
     .skill-pill {
       display: inline-block;
-      padding: 0.25rem 0.55rem;
-      border: 1px solid #e5e5e5;
+      padding: 0.28rem 0.58rem;
+      border: 1px solid var(--color-border);
       border-radius: 999px;
-      background: #fafafa;
-      color: #333;
+      background: var(--color-bg-card);
+      color: var(--color-text-muted);
       font-size: 0.82rem;
     }
 
     .site-footer {
       text-align: center;
-      padding: 1.5rem 1rem 2.5rem;
+      padding: 1.75rem 1rem 2.5rem;
       font-size: 0.8rem;
-      color: #888;
+      color: var(--color-text-soft);
+      border-top: 1px solid var(--color-border);
+      background: var(--color-bg-page);
     }
 
     .edu-list {
       margin: 0;
       padding-left: 1.15rem;
-      color: #333;
+      color: var(--color-text-muted);
       font-size: 0.95rem;
     }
     .edu-list li { margin-bottom: 0.45rem; }
@@ -432,7 +483,7 @@
   </main>
 
   <footer class="site-footer">
-    © 2026 Ashok Suryakant More · Built with GitHub Pages
+    © 2026 Ashok S. More · Built with GitHub Pages
   </footer>
 </body>
 </html>
