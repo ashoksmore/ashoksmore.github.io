@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { profile } from '../data/content';
 import StatCounter from './StatCounter';
+import HeroStatText from './HeroStatText';
 
-const stats = [
+const numericStats = [
   { target: 5, suffix: '+', label: 'Years experience' },
   { target: 3, suffix: '', label: 'Industries' },
-  { target: 10, suffix: '+', label: 'Half marathons' },
 ];
 
 export default function HomeHero() {
@@ -26,9 +26,10 @@ export default function HomeHero() {
           </p>
 
           <div className="hero-stats" role="group" aria-label="Career highlights">
-            {stats.map((stat) => (
+            {numericStats.map((stat) => (
               <StatCounter key={stat.label} {...stat} />
             ))}
+            <HeroStatText value="GenAI shipped" />
           </div>
 
           <div className="home-hero-ctas">
