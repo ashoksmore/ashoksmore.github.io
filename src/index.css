@@ -1039,6 +1039,255 @@ section:last-child { margin-bottom: 0; }
   min-height: 0;
 }
 
+.page-main--beyond {
+  padding: 0;
+  max-width: none;
+}
+
+/* Beyond the Code — running & life */
+.beyond-page {
+  width: 100%;
+}
+
+.beyond-hero {
+  position: relative;
+  width: 100%;
+  min-height: clamp(220px, 42vw, 380px);
+  max-height: 420px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a1628 0%, var(--color-navy) 100%);
+}
+
+.beyond-hero-img {
+  width: 100%;
+  height: 100%;
+  min-height: clamp(220px, 42vw, 380px);
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+}
+
+.beyond-hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 22, 40, 0.15) 0%,
+    rgba(10, 22, 40, 0.55) 100%
+  );
+  pointer-events: none;
+}
+
+.beyond-hero-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(220px, 42vw, 380px);
+  padding: 2rem;
+  text-align: center;
+}
+
+.beyond-hero-placeholder-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 28rem;
+  line-height: 1.5;
+}
+
+.beyond-body {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.beyond-title {
+  margin: 0 0 1rem;
+  font-size: clamp(1.65rem, 4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--color-navy);
+}
+
+.beyond-lead {
+  margin: 0 0 1rem;
+  font-size: 1.12rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  max-width: 65ch;
+}
+
+.beyond-body-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  max-width: 65ch;
+}
+
+.about-beyond-link {
+  margin: 1.25rem 0 0;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  max-width: 65ch;
+}
+
+.about-beyond-link a {
+  font-weight: 600;
+}
+
+/* Running ↔ engineering parallels */
+.parallels-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.parallel-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.35rem 1.4rem;
+  box-shadow: var(--shadow-card);
+}
+
+.parallel-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.parallel-running,
+.parallel-engineering {
+  margin: 0 0 0.85rem;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.parallel-engineering {
+  margin-bottom: 0;
+}
+
+.parallel-tag {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.35rem;
+}
+
+/* Race stats */
+.stats-note {
+  margin: 0 0 1.25rem;
+  font-size: 0.92rem;
+  color: var(--color-text-soft);
+  max-width: 50ch;
+}
+
+.race-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0;
+}
+
+.race-stat {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.15rem 1rem;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+
+.race-stat-label {
+  display: block;
+  margin: 0 0 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+}
+
+.race-stat-value {
+  display: block;
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-navy);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Captioned gallery */
+.captioned-gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.captioned-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.captioned-img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  background: #eef2f6;
+}
+
+.captioned-item--tall .captioned-img,
+.captioned-item--tall .captioned-placeholder {
+  min-height: 220px;
+}
+
+.captioned-item--square .captioned-img,
+.captioned-item--square .captioned-placeholder {
+  min-height: 160px;
+}
+
+.captioned-item--wide .captioned-img,
+.captioned-item--wide .captioned-placeholder {
+  min-height: 120px;
+}
+
+.captioned-img {
+  min-height: 140px;
+}
+
+.captioned-placeholder {
+  min-height: 140px;
+}
+
+.captioned-caption {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+  font-style: italic;
+  padding: 0 0.15rem;
+}
+
+@media (max-width: 600px) {
+  .race-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .home-hero {
     padding: 2.25rem 1.25rem 2.5rem;

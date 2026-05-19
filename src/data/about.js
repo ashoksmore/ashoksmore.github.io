@@ -42,11 +42,3 @@ export const livingQuote = {
   attribution: '— a line I come back to, on the road and in the codebase',
 };
 
-export const galleryPlaceholders = [
-  { id: 'marathon-1', label: 'Marathon finish line', aspect: 'tall' },
-  { id: 'marathon-2', label: 'Race day', aspect: 'wide' },
-  { id: 'personal-1', label: 'On the trail', aspect: 'square' },
-  { id: 'personal-2', label: 'Boston moments', aspect: 'tall' },
-  { id: 'marathon-3', label: 'Training run', aspect: 'square' },
-  { id: 'personal-3', label: 'Off the clock', aspect: 'wide' },
-];

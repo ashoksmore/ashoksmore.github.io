@@ -23,6 +23,12 @@ Multi-page React portfolio deployed to [ashoksmore.github.io](https://ashoksmore
 
 Add your professional photo as `public/headshot.jpg` (square, ~600×600px recommended). Until then, a placeholder SVG is shown automatically.
 
+## Beyond the Code photos
+
+- Hero: `public/gallery/marathon-hero.jpg` (wide, ~1600×600px recommended)
+- Gallery: set `src` on items in `src/data/beyondCode.js` (e.g. `/gallery/photo-1.jpg`)
+- Race stats: update values in `src/data/beyondCode.js`
+
 ## Local development
 
 ```bash

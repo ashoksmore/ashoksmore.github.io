@@ -7,6 +7,7 @@ import Footer from './Footer';
 export default function Layout({ children }) {
   const { pathname } = useLocation();
   const isHome = pathname === '/';
+  const isBeyond = pathname === '/beyond-code';
 
   return (
     <>
@@ -17,7 +18,13 @@ export default function Layout({ children }) {
       <SiteNav />
       <main
         id="main-content"
-        className={isHome ? 'page-main page-main--home' : 'page-main'}
+        className={
+          isHome
+            ? 'page-main page-main--home'
+            : isBeyond
+              ? 'page-main page-main--beyond'
+              : 'page-main'
+        }
       >
         {children}
       </main>

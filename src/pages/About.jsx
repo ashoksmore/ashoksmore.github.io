@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
 import SectionHeading from '../components/SectionHeading';
+import SkillsList from '../components/SkillsList';
+import { skillGroups, educationItems } from '../data/content';
 import {
   aboutIntro,
   journeyTimeline,
   whatDrivesMe,
   livingQuote,
-  galleryPlaceholders,
 } from '../data/about';
 
 export default function About() {
@@ -17,6 +19,10 @@ export default function About() {
           Across <strong>MedTech</strong>, <strong>FinTech</strong>, and{' '}
           <strong>eCommerce</strong>, the stack shifts—but the bar stays the same: systems
           people can rely on, and teammates who know what shipped and why.
+        </p>
+        <p className="about-beyond-link">
+          <Link to="/beyond-code">Beyond the Code</Link> — how marathon training shapes the
+          way I build software.
         </p>
       </header>
 
@@ -64,31 +70,19 @@ export default function About() {
         <figcaption>{livingQuote.attribution}</figcaption>
       </figure>
 
-      <section className="about-gallery" aria-labelledby="gallery-heading">
-        <h2 id="gallery-heading" className="about-subheading">
-          Beyond the Code
-        </h2>
-        <p className="gallery-lead">
-          Marathons, trails, and the quiet hours away from the keyboard—photos coming soon.
-        </p>
-        <ul className="masonry-grid" aria-label="Photo gallery placeholders">
-          {galleryPlaceholders.map((slot) => (
-            <li
-              key={slot.id}
-              className={`masonry-item masonry-item--${slot.aspect}`}
-            >
-              <div
-                className="gallery-placeholder"
-                role="img"
-                aria-label={`Photo placeholder: ${slot.label}`}
-              >
-                <span className="gallery-placeholder-icon" aria-hidden="true">
-                  ◻
-                </span>
-                <span className="gallery-placeholder-label">{slot.label}</span>
-              </div>
-            </li>
-          ))}
+      <section className="skills" aria-labelledby="skills-heading">
+        <SectionHeading id="skills-heading">Skills</SectionHeading>
+        <SkillsList groups={skillGroups} />
+      </section>
+
+      <section className="education" aria-labelledby="edu-heading">
+        <SectionHeading id="edu-heading">Education &amp; highlights</SectionHeading>
+        <ul className="edu-list">
+          <li>
+            <strong>{educationItems[0].strong}</strong>
+            {educationItems[0].text}
+          </li>
+          <li>{educationItems[1].text}</li>
         </ul>
       </section>
     </article>
