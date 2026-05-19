@@ -1,8 +1,8 @@
 /** Update race stats and gallery src paths when you have final numbers and photos. */
 
 export const beyondHero = {
-  imageSrc: '/gallery/marathon-hero.jpg',
-  fallbackLabel: 'Marathon hero photo — add marathon-hero.jpg to public/gallery/',
+  imageSrc: '/gallery/marathon-hero.png',
+  fallbackLabel: 'Marathon hero photo — add marathon-hero.png to public/gallery/',
   alt: 'Ashok More on a marathon course',
 };
 
@@ -42,48 +42,56 @@ export const raceStats = [
   { label: 'Personal best', value: '—' },
 ];
 
-/** Set `src` to e.g. `/gallery/photo-1.jpg` when ready — layout stays the same. */
+/**
+ * Gallery photos — set `src` to `/gallery/your-file.jpeg` in public/gallery/.
+ * Uncomment placeholders below when you add more images.
+ */
 export const photoGallery = [
+  // 1 — Training / on the course
   {
-    id: 'bc-1',
-    src: null,
-    caption: 'Where the training happens—early miles before the city wakes up.',
-    location: 'Charles River, Boston',
-    aspect: 'wide',
-  },
-  {
-    id: 'bc-2',
-    src: null,
-    caption: 'Race morning. Nerves, coffee, and the same checklist every time.',
-    location: 'Start line',
+    id: 'bc-trail',
+    src: '/gallery/trail-run.jpeg',
+    caption: 'Off the road, on the trail—space to think without a screen.',
+    location: 'B.A.A. Half Marathon',
     aspect: 'tall',
   },
+  // 2 — Finish
   {
-    id: 'bc-3',
-    src: null,
+    id: 'bc-finish',
+    src: '/gallery/finish-line.jpeg',
     caption: 'The finish chute—tired, grateful, already thinking about the next build.',
     location: 'Marathon finish',
-    aspect: 'square',
+    aspect: 'wide',
   },
+  // 3 — Post-race
   {
-    id: 'bc-4',
-    src: null,
+    id: 'bc-recovery',
+    src: '/gallery/recovery-walk.jpeg',
     caption: 'Recovery walk. The work isn’t done when you cross the line.',
     location: 'Post-race',
     aspect: 'tall',
   },
-  {
-    id: 'bc-5',
-    src: null,
-    caption: 'Boston streets—home course energy.',
-    location: 'Boston, MA',
-    aspect: 'square',
-  },
-  {
-    id: 'bc-6',
-    src: null,
-    caption: 'Off the road, on the trail—space to think without a screen.',
-    location: 'Trail run',
-    aspect: 'wide',
-  },
+
+  // --- Placeholders (uncomment when photos are ready) ---
+  // {
+  //   id: 'bc-1',
+  //   src: null,
+  //   caption: 'Where the training happens—early miles before the city wakes up.',
+  //   location: 'Charles River, Boston',
+  //   aspect: 'wide',
+  // },
+  // {
+  //   id: 'bc-2',
+  //   src: null,
+  //   caption: 'Race morning. Nerves, coffee, and the same checklist every time.',
+  //   location: 'Start line',
+  //   aspect: 'tall',
+  // },
+  // {
+  //   id: 'bc-5',
+  //   src: null,
+  //   caption: 'Boston streets—home course energy.',
+  //   location: 'Boston, MA',
+  //   aspect: 'square',
+  // },
 ];
