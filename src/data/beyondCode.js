@@ -42,41 +42,48 @@ export const raceStats = [
   { label: 'Personal best', value: '—' },
 ];
 
+/** Set `src` to e.g. `/gallery/photo-1.jpg` when ready — layout stays the same. */
 export const photoGallery = [
   {
     id: 'bc-1',
     src: null,
     caption: 'Where the training happens—early miles before the city wakes up.',
+    location: 'Charles River, Boston',
     aspect: 'wide',
   },
   {
     id: 'bc-2',
     src: null,
     caption: 'Race morning. Nerves, coffee, and the same checklist every time.',
+    location: 'Start line',
     aspect: 'tall',
   },
   {
     id: 'bc-3',
     src: null,
     caption: 'The finish chute—tired, grateful, already thinking about the next build.',
+    location: 'Marathon finish',
     aspect: 'square',
   },
   {
     id: 'bc-4',
     src: null,
     caption: 'Recovery walk. The work isn’t done when you cross the line.',
+    location: 'Post-race',
     aspect: 'tall',
   },
   {
     id: 'bc-5',
     src: null,
     caption: 'Boston streets—home course energy.',
+    location: 'Boston, MA',
     aspect: 'square',
   },
   {
     id: 'bc-6',
     src: null,
     caption: 'Off the road, on the trail—space to think without a screen.',
+    location: 'Trail run',
     aspect: 'wide',
   },
 ];

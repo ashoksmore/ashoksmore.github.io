@@ -1,5 +1,5 @@
 import BeyondHero from '../components/BeyondHero';
-import CaptionedGallery from '../components/CaptionedGallery';
+import ImageGallery from '../components/ImageGallery';
 import {
   beyondIntro,
   engineeringParallels,
@@ -64,7 +64,7 @@ export default function BeyondCode() {
           <p className="gallery-lead">
             Moments from training and race weekends—each caption is a small piece of the same mindset I bring to work.
           </p>
-          <CaptionedGallery items={photoGallery} />
+          <ImageGallery photos={photoGallery} />
         </section>
       </div>
     </article>

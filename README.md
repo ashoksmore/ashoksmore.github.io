@@ -26,7 +26,8 @@ Add your professional photo as `public/headshot.jpg` (square, ~600×600px recomm
 ## Beyond the Code photos
 
 - Hero: `public/gallery/marathon-hero.jpg` (wide, ~1600×600px recommended)
-- Gallery: set `src` on items in `src/data/beyondCode.js` (e.g. `/gallery/photo-1.jpg`)
+- Gallery: set `src` on items in `src/data/beyondCode.js` (e.g. `/gallery/photo-1.jpg`). Each photo supports `src`, `caption`, `location`, and optional `aspect` (`tall` | `square` | `wide`). Empty `src` shows a dashed placeholder—no layout changes needed.
+- Reuse `<ImageGallery photos={...} />` anywhere; optional `placeholderLabel` prop.
 - Race stats: update values in `src/data/beyondCode.js`
 
 ## Local development
