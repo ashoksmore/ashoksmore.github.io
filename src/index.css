@@ -494,6 +494,90 @@ section:last-child { margin-bottom: 0; }
   max-width: none;
 }
 
+/* How I show up for your team */
+.team-showup-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.team-value-card {
+  height: 100%;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.35rem 1.4rem;
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.team-value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: #cbd5e1;
+}
+
+.team-value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.85rem;
+  border-radius: 8px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  transition: background 0.22s ease, color 0.22s ease;
+}
+
+.team-value-card:hover .team-value-icon {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.team-value-icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.team-value-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.35;
+}
+
+.team-value-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  max-width: none;
+}
+
+@media (max-width: 640px) {
+  .team-showup-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-value-card,
+  .team-value-icon {
+    transition: none;
+  }
+  .team-value-card:hover {
+    transform: none;
+  }
+}
+
 /* Quote */
 .about-quote {
   margin: 0;

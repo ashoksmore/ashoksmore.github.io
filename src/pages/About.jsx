@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import SectionHeading from '../components/SectionHeading';
 import SkillsList from '../components/SkillsList';
 import { skillGroups, educationItems } from '../data/content';
+import TeamShowUp from '../components/TeamShowUp';
 import {
   aboutIntro,
   journeyTimeline,
@@ -62,6 +63,8 @@ export default function About() {
           ))}
         </div>
       </section>
+
+      <TeamShowUp />
 
       <figure className="about-quote">
         <blockquote cite="#">

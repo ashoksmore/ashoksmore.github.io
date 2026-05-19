@@ -37,6 +37,29 @@ export const whatDrivesMe = [
   },
 ];
 
+export const teamShowUp = [
+  {
+    id: 'ownership',
+    title: 'I own features end-to-end',
+    body: 'From design through production monitoring—I stay with the work until it’s observable, supportable, and clearly owned.',
+  },
+  {
+    id: 'standards',
+    title: 'I establish standards others build on',
+    body: 'Pytest and Jest coverage patterns I introduced at Medsix were adopted team-wide—shared baselines beat one-off heroics.',
+  },
+  {
+    id: 'mentor',
+    title: 'I mentor junior engineers',
+    body: 'At Ingram Micro I led juniors on a Django + NLP resume-classifier project that hit 90.25% accuracy and made HR workflows faster.',
+  },
+  {
+    id: 'communicate',
+    title: 'I move fast and communicate early',
+    body: 'I surface blockers and tradeoffs while there’s still room to adjust—no silent slips, no surprise fire drills on launch day.',
+  },
+];
+
 export const livingQuote = {
   text: 'Show up consistently. Build with care. The long run is the whole point.',
   attribution: '— a line I come back to, on the road and in the codebase',
