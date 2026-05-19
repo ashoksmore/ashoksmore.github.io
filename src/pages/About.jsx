@@ -22,7 +22,7 @@ export default function About() {
           people can rely on, and teammates who know what shipped and why.
         </p>
         <p className="about-beyond-link">
-          <Link to="/beyond-code">Beyond the Code</Link> — how marathon training shapes the
+          <Link to="/beyond-code">Beyond the Code</Link> — how half marathon training shapes the
           way I build software.
         </p>
       </header>

@@ -22,7 +22,7 @@ export default function HomeHero() {
           </h1>
           <p className="home-hero-title">{profile.title}</p>
           <p className="home-hero-tagline">
-            I build systems that scale — and run marathons on the side
+            I build systems that scale — and run half marathons on the side
           </p>
 
           <div className="hero-stats" role="group" aria-label="Career highlights">
