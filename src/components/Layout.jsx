@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import Header from './Header';
+import HomeHero from './HomeHero';
 import SiteNav from './SiteNav';
 import Footer from './Footer';
 
@@ -12,9 +13,12 @@ export default function Layout({ children }) {
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>
-      <Header compact={!isHome} />
+      {isHome ? <HomeHero /> : <Header compact />}
       <SiteNav />
-      <main id="main-content" className="page-main">
+      <main
+        id="main-content"
+        className={isHome ? 'page-main page-main--home' : 'page-main'}
+      >
         {children}
       </main>
       <Footer />

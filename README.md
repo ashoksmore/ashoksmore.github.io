@@ -19,6 +19,10 @@ Multi-page React portfolio deployed to [ashoksmore.github.io](https://ashoksmore
 | `/beyond-code` | Skills & education |
 | `/contact` | Contact |
 
+## Headshot
+
+Add your professional photo as `public/headshot.jpg` (square, ~600×600px recommended). Until then, a placeholder SVG is shown automatically.
+
 ## Local development
 
 ```bash
