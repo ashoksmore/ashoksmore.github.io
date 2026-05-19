@@ -6,7 +6,7 @@ import StatCounter from './StatCounter';
 const stats = [
   { target: 5, suffix: '+', label: 'Years experience' },
   { target: 3, suffix: '', label: 'Industries' },
-  { target: 2, suffix: '', label: 'Production AI systems' },
+  { target: 10, suffix: '+', label: 'Half marathons' },
 ];
 
 export default function HomeHero() {
