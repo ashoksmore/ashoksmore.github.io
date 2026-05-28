@@ -12,7 +12,13 @@ export const journeyTimeline = [
     place: 'Northeastern University, Boston',
     period: '2021 – 2023',
     story:
-      'My M.S. in Computer Science pulled me into algorithms, databases, ML, and NLP—and into a city that became home. Internships at DriveWealth connected classroom ideas to FinTech scale: half a terabyte of logs a month and APIs real money moved through.',
+      'My M.S. in Computer Science pulled me into algorithms, databases, ML, and NLP—and into a city that became home.',
+  },
+  {
+    place: 'DriveWealth, Jersey City',
+    period: '2022',
+    story:
+      'At DriveWealth I worked on FinTech APIs and analytics at scale—processing 500GB+ monthly logs, building React + Material-UI internal tooling, and contributing to secure brokerage integrations where reliability and compliance matter.',
   },
   {
     place: 'Medsix, Boston',
