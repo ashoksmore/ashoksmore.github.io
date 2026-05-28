@@ -18,7 +18,7 @@ export const journeyTimeline = [
     place: 'Medsix, Boston',
     period: '2024 – Present',
     story:
-      'Today I build clinical analytics with FastAPI, React, and Kafka—systems where latency and correctness both matter. MedTech is demanding in the best way: regulated data, real clinicians, and plenty of room to ship AI carefully, not just quickly.',
+      'Today I build clinical analytics with FastAPI, React, and Kafka—and agentic AI on Bedrock and LangChain—where latency and correctness both matter. MedTech is demanding in the best way: regulated data, real clinicians, and plenty of room to ship AI carefully, not just quickly.',
   },
 ];
 

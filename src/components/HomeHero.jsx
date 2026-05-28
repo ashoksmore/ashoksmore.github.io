@@ -5,7 +5,7 @@ import StatCounter from './StatCounter';
 import HeroStatText from './HeroStatText';
 
 const numericStats = [
-  { target: 5, suffix: '+', label: 'Years experience' },
+  { target: 6, suffix: '+', label: 'Years experience' },
   { target: 3, suffix: '', label: 'Industries' },
 ];
 

@@ -4,7 +4,7 @@ export const profile = {
   name: 'Ashok S. More',
   title: 'Full Stack Software Engineer',
   subtitle: 'MedTech · FinTech · eCommerce · Python · React · AWS · ML / AI',
-  location: 'Boston, MA',
+  location: 'Boston, MA 02120',
   phone: '(617) 412-5427',
   phoneHref: 'tel:+16174125427',
   email: 'ashoksmore11@gmail.com',
@@ -13,7 +13,7 @@ export const profile = {
 };
 
 export const aboutText =
-  'Full stack software engineer with 5+ years building and scaling production systems in Python, React, Java, and AWS across MedTech, FinTech, and eCommerce—from clinical analytics and regulated health data at Medsix, to brokerage APIs and compliance-heavy finance at DriveWealth, to high-volume marketplace and logistics platforms at Ingram Micro. Comfortable joining early-stage MedTech or FinTech teams with 0→1 ownership. I ship ML/AI in production (deterministic patterns, RAG-style grounding), run tight code review for AI-generated changes, and partner across teams for quality.';
+  'Full stack software engineer with 6+ years building and scaling production systems in Python, React, Java, and AWS across MedTech, FinTech, and eCommerce—from clinical analytics and regulated health data at Medsix, to brokerage APIs and compliance-heavy finance at DriveWealth, to high-volume marketplace and logistics platforms at Ingram Micro. Comfortable joining early-stage MedTech or FinTech teams with 0→1 ownership. I ship ML/AI in production (deterministic patterns, RAG-style grounding), run tight code review for AI-generated changes, and partner across teams for quality.';
 
 export const experience = [
   {
@@ -21,8 +21,9 @@ export const experience = [
     dates: '03/2024 – Present',
     role: 'Software Engineer (Python + Full-Stack)',
     bullets: [
-      'Clinical analytics platform: FastAPI, React (TypeScript), Kafka; −35% end-to-end latency via backend tuning and component-level state design.',
-      '15+ async REST endpoints, PostgreSQL tuning (−20% retrieval), and 95% coverage (Pytest, Jest/RTL); set team standards for reviewing AI-generated backend code.',
+      'Architected full-stack clinical analytics with FastAPI, React (TypeScript), and Kafka; cut end-to-end latency 35% via backend tuning and component-level state design.',
+      'Agentic AI PoC on AWS Bedrock and LangChain: multi-tool orchestration (OCR, classification, extraction, validation) that reduced manual review time by 40%.',
+      'Material-UI and reusable React patterns; 15+ async REST endpoints, PostgreSQL tuning (−20% retrieval), 95% coverage (Pytest, Jest/RTL), and peer review standards for secure integration of AI-generated backend code.',
     ],
   },
   {
@@ -30,7 +31,7 @@ export const experience = [
     dates: '06/2022 – 12/2022',
     role: 'Software Engineering API Intern (Python + Java)',
     bullets: [
-      'Django analytics on 500GB+ monthly API logs; React + Material-UI ops dashboard.',
+      'Django analytics on 500GB+ monthly API logs for millions of investor accounts; React + Material-UI internal ops dashboard.',
       'Java Spring Boot brokerage APIs on AWS for 100+ partners; Redis sessions at 99.99% availability; Okta/JWT security aligned to FINRA expectations.',
     ],
   },
@@ -55,14 +56,6 @@ export const projects = [
     github: 'https://github.com/ashoksmore/expense-tracker-api',
     demo: 'https://expense-tracker-fe-wg3g.onrender.com',
   },
-  {
-    title: 'GenAI Finance Health Dashboard',
-    tags: 'Python · FastAPI · React · Azure OpenAI · PostgreSQL',
-    description:
-      'Hackathon build: CFO-style KPI dashboard with a deterministic Python pipeline feeding Azure OpenAI (GPT-4o) for spend analysis.',
-    github: 'https://github.com/ashoksmore/genai-finance-dashboard',
-    demo: null,
-  },
 ];
 
 export const skillGroups = [
@@ -83,11 +76,14 @@ export const skillGroups = [
       'Pytest',
       'JUnit',
       'Jest',
+      'Maven',
     ],
   },
   {
     label: 'AI & LLMs:',
     pills: [
+      'AWS Bedrock',
+      'LangChain',
       'LLMs',
       'Groq',
       'Ollama',
@@ -106,15 +102,19 @@ export const skillGroups = [
     pills: [
       'Kafka',
       'SQS',
+      'SNS',
       'WebSockets',
       'REST',
+      'SOAP',
       'Docker',
       'Kubernetes',
       'Terraform',
+      'CodePipeline',
       'Sumo Logic',
       'CloudWatch',
       'Git',
       'Jira',
+      'Agile',
     ],
   },
 ];
