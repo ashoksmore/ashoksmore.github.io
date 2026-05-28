@@ -18,7 +18,7 @@ export const journeyTimeline = [
     place: 'DriveWealth, Jersey City',
     period: '2022',
     story:
-      'At DriveWealth I worked on Java/Spring Boot brokerage APIs and analytics at scale; processing 500GB+ monthly logs, building React + Material-UI internal tooling, and contributing to secure integrations where reliability and compliance matter.',
+      'At DriveWealth I worked across Python and Java/Spring Boot—brokerage APIs and analytics at scale, 500GB+ monthly logs, React + Material-UI internal tooling, and secure integrations where reliability and compliance matter.',
   },
   {
     place: 'Medsix, Boston',
