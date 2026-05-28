@@ -13,7 +13,7 @@ export const profile = {
 };
 
 export const aboutText =
-  'Full stack software engineer with 6+ years building and scaling production systems in Python, React, Java, and AWS across MedTech, FinTech, and eCommerce—from clinical analytics and regulated health data at Medsix, to brokerage APIs and compliance-heavy finance at DriveWealth, to high-volume marketplace and logistics platforms at Ingram Micro. Comfortable joining early-stage MedTech or FinTech teams with 0→1 ownership. I ship ML/AI in production (deterministic patterns, RAG-style grounding), run tight code review for AI-generated changes, and partner across teams for quality.';
+  'Full stack software engineer with 6 years building and scaling production systems in Python, React, Java, and AWS across MedTech, FinTech, and eCommerce—from clinical analytics and regulated health data at Medsix, to brokerage APIs and compliance-heavy finance at DriveWealth, to high-volume marketplace and logistics platforms at Ingram Micro. Comfortable joining early-stage MedTech or FinTech teams with 0→1 ownership. I ship ML/AI in production (deterministic patterns, RAG-style grounding), run tight code review for AI-generated changes, and partner across teams for quality.';
 
 export const experience = [
   {
@@ -22,7 +22,7 @@ export const experience = [
     role: 'Software Engineer (Python + Full-Stack)',
     bullets: [
       'Architected full-stack clinical analytics with FastAPI, React (TypeScript), and Kafka; cut end-to-end latency 35% via backend tuning and component-level state design.',
-      'Agentic AI PoC on AWS Bedrock and LangChain: multi-tool orchestration (OCR, classification, extraction, validation) that reduced manual review time by 40%.',
+      'Engineered agentic AI system (proof-of-concept) with AWS Bedrock and LangChain (ReAct pattern, multi-tool pipeline: OCR, classification, extraction, validation); measurably reducing manual document review steps in controlled testing.',
       'Material-UI and reusable React patterns; 15+ async REST endpoints, PostgreSQL tuning (−20% retrieval), 95% coverage (Pytest, Jest/RTL), and peer review standards for secure integration of AI-generated backend code.',
     ],
   },
