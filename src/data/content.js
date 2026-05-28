@@ -22,7 +22,7 @@ export const experience = [
     role: 'Software Engineer (Python + Full-Stack)',
     bullets: [
       'Architected full-stack clinical analytics with FastAPI, React (TypeScript), and Kafka; cut end-to-end latency 35% via backend tuning and component-level state design.',
-      'Engineered agentic AI system (proof-of-concept) with AWS Bedrock and LangChain (ReAct pattern, multi-tool pipeline: OCR, classification, extraction, validation); measurably reducing manual document review steps in controlled testing.',
+      'Built a backend-focused agentic AI proof-of-concept with AWS Bedrock and LangChain (ReAct; multi-tool pipeline: OCR, classification, extraction, validation) to reduce manual document review steps in controlled testing.',
       'Material-UI and reusable React patterns; 15+ async REST endpoints, PostgreSQL tuning (−20% retrieval), 95% coverage (Pytest, Jest/RTL), and peer review standards for secure integration of AI-generated backend code.',
     ],
   },
