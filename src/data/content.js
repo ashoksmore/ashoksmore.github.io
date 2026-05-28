@@ -56,6 +56,14 @@ export const projects = [
     github: 'https://github.com/ashoksmore/expense-tracker-api',
     demo: 'https://expense-tracker-fe-wg3g.onrender.com',
   },
+  {
+    title: 'GenAI Finance Health Dashboard',
+    tags: 'Python · FastAPI · React · Azure OpenAI · PostgreSQL',
+    description:
+      'Hackathon build: CFO-style KPI dashboard with a deterministic Python pipeline feeding Azure OpenAI (GPT-4o) for spend analysis.',
+    github: 'https://github.com/ashoksmore/genai-finance-dashboard',
+    demo: null,
+  },
 ];
 
 export const skillGroups = [
