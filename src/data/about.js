@@ -1,12 +1,12 @@
 export const aboutIntro =
-  'I’m a full stack engineer who grew up writing code in India, sharpened the craft at Northeastern, and now builds clinical analytics at Medsix in Boston. I care about systems that hold up under real load—and about the people on the other side of the screen.';
+  'I’m a full stack engineer who grew up writing code in India, sharpened the craft at Northeastern, and now builds clinical analytics at Medsix in Boston. I care about systems that hold up under real load and about the people on the other side of the screen.';
 
 export const journeyTimeline = [
   {
     place: 'India',
     period: 'Where it started',
     story:
-      'I cut my teeth on production software at Ingram Micro—marketplace backends, long days debugging orders and inventory, and learning that “it works on my machine” is never the finish line. That’s where I picked up the habit of owning problems end to end.',
+      'I cut my teeth on production software at Ingram Micro; marketplace backends, long days debugging orders and inventory, and learning that “it works on my machine” is never the finish line. That’s where I picked up the habit of owning problems end to end.',
   },
   {
     place: 'Northeastern University, Boston',
@@ -18,7 +18,7 @@ export const journeyTimeline = [
     place: 'DriveWealth, Jersey City',
     period: '2022',
     story:
-      'At DriveWealth I worked on Java/Spring Boot brokerage APIs and analytics at scale—processing 500GB+ monthly logs, building React + Material-UI internal tooling, and contributing to secure integrations where reliability and compliance matter.',
+      'At DriveWealth I worked on Java/Spring Boot brokerage APIs and analytics at scale; processing 500GB+ monthly logs, building React + Material-UI internal tooling, and contributing to secure integrations where reliability and compliance matter.',
   },
   {
     place: 'Medsix, Boston',
@@ -31,15 +31,15 @@ export const journeyTimeline = [
 export const whatDrivesMe = [
   {
     title: 'Engineering craft',
-    body: 'I like code that’s boring in production—clear boundaries, tests that earn trust, and refactors that make the next feature cheaper. Whether it’s shaving latency off a Kafka pipeline or grounding an LLM in numbers you can audit, I’d rather ship something solid than something flashy.',
+    body: 'I like code that’s boring in production; clear boundaries, tests that earn trust, and refactors that make the next feature cheaper. Whether it’s shaving latency off a Kafka pipeline or grounding an LLM in numbers you can audit, I’d rather ship something solid than something flashy.',
   },
   {
     title: 'Problem ownership',
-    body: 'The best work I’ve done started with “I’ll figure it out”—not a perfect spec. I’m comfortable in the messy middle: digging through logs, pairing with product, pushing back when scope needs a trim. If my name is on it, I want it to work for the team that runs it after me.',
+    body: 'The best work I’ve done started with “I’ll figure it out”, not a perfect spec. I’m comfortable in the messy middle: digging through logs, pairing with product, pushing back when scope needs a trim. If my name is on it, I want it to work for the team that runs it after me.',
   },
   {
     title: 'Team growth',
-    body: 'Some of my favorite moments weren’t solo wins—leading juniors on an NLP project at Ingram, reviewing AI-generated code with clear standards at Medsix, or explaining a design so the next person can extend it. Good teams compound; I try to leave every one a little better than I found it.',
+    body: 'Some of my favorite moments weren’t solo wins; leading juniors on an NLP project at Ingram, reviewing AI-generated code with clear standards at Medsix, or explaining a design so the next person can extend it. Good teams compound; I try to leave every one a little better than I found it.',
   },
 ];
 
@@ -47,7 +47,7 @@ export const teamShowUp = [
   {
     id: 'ownership',
     title: 'I own features end-to-end',
-    body: 'From design through production monitoring—I stay with the work until it’s observable, supportable, and clearly owned.',
+    body: 'From design through production monitoring; I stay with the work until it’s observable, supportable, and clearly owned.',
   },
   {
     id: 'standards',
@@ -62,7 +62,7 @@ export const teamShowUp = [
   {
     id: 'communicate',
     title: 'I move fast and communicate early',
-    body: 'I surface blockers and tradeoffs while there’s still room to adjust—no silent slips, no surprise fire drills on launch day.',
+    body: 'I surface blockers and tradeoffs while there’s still room to adjust; no silent slips, no surprise fire drills on launch day.',
   },
 ];
 
