@@ -1027,10 +1027,18 @@ section:last-child { margin-bottom: 0; }
 }
 
 .home-hero-title {
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.5rem;
   font-size: clamp(1.05rem, 2.5vw, 1.2rem);
   font-weight: 500;
   color: rgba(255, 255, 255, 0.88);
+}
+
+.home-hero-credentials {
+  margin: 0 0 1.25rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.01em;
 }
 
 .home-hero-tagline {

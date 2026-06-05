@@ -3,6 +3,9 @@ export const RESUME_URL = '/Ashok_More_Resume.pdf';
 export const profile = {
   name: 'Ashok S. More',
   title: 'Full Stack Software Engineer',
+  credentials: 'Open-source contributor · Meta balance',
+  tagline:
+    'I build production systems in Python, Java, and React—contribute tests and fixes to open source when I can—and run half marathons on the side.',
   subtitle: 'MedTech · FinTech · eCommerce · Python · React · AWS · ML / AI',
   location: 'Boston, MA 02120',
   phone: '(617) 412-5427',
@@ -47,6 +50,14 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: 'Meta balance (facebookresearch)',
+    tags: 'Python · Pytest · Causal inference',
+    description:
+      'Contributor on balance #504: regression test for CBPS rank-deficient SVD handling—locking down existing matrix prep behavior flagged with an inline TODO.',
+    github: 'https://github.com/facebookresearch/balance/issues/504',
+    demo: null,
+  },
   {
     title: 'AI Assisted Expense Tracker',
     tags:

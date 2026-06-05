@@ -21,9 +21,10 @@ export default function HomeHero() {
             {profile.name}
           </h1>
           <p className="home-hero-title">{profile.title}</p>
-          <p className="home-hero-tagline">
-            I build systems that scale — and run half marathons on the side
-          </p>
+          {profile.credentials && (
+            <p className="home-hero-credentials">{profile.credentials}</p>
+          )}
+          <p className="home-hero-tagline">{profile.tagline}</p>
 
           <div className="hero-stats" role="group" aria-label="Career highlights">
             {numericStats.map((stat) => (
