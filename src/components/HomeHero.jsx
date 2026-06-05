@@ -16,7 +16,7 @@ export default function HomeHero() {
     <section className="home-hero" aria-labelledby="hero-name">
       <div className="home-hero-inner">
         <div className="home-hero-content">
-          <p className="home-hero-eyebrow">{profile.location} · Open to relocation</p>
+          <p className="home-hero-eyebrow">{profile.relocationNote}</p>
           <h1 id="hero-name" className="home-hero-name">
             {profile.name}
           </h1>

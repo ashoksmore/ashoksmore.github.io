@@ -8,7 +8,7 @@ export default function Header({ compact = false }) {
         <p className="title">{profile.title}</p>
         <p className="subtitle">{profile.subtitle}</p>
         <p className="header-meta">
-          {profile.location} · Open to relocation ·{' '}
+          {profile.relocationNote} ·{' '}
           <a href={profile.phoneHref}>{profile.phone}</a>
         </p>
         <nav className="header-links" aria-label="Contact and profiles">

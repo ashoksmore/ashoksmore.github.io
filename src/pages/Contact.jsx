@@ -7,12 +7,14 @@ export default function Contact() {
       <SectionHeading id="contact-heading">Contact</SectionHeading>
       <p className="contact-intro">
         Open to full-stack and AI-forward roles at MedTech, FinTech, and eCommerce startups.
-        Based in Boston and open to relocation.
+        {profile.relocationNote}.
       </p>
       <ul className="contact-list">
         <li>
           <span className="contact-label">Location</span>
-          <span>{profile.location} · Open to relocation</span>
+          <span>
+            {profile.location} · {profile.relocationNote}
+          </span>
         </li>
         <li>
           <span className="contact-label">Phone</span>
