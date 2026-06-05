@@ -5,7 +5,7 @@ export const profile = {
   title: 'Full Stack Software Engineer',
   credentials: 'Open-source contributor · Meta balance',
   tagline:
-    'I build production systems in Python, Java, and React—contribute tests and fixes to open source when I can—and run half marathons on the side.',
+    'I build production systems in Python, Java, and React; contribute tests and fixes to open source when I can; and run half marathons on the side.',
   subtitle: 'MedTech · FinTech · eCommerce · Python · React · AWS · ML / AI',
   location: 'Boston, MA 02120',
   phone: '(617) 412-5427',
@@ -16,7 +16,7 @@ export const profile = {
 };
 
 export const aboutText =
-  'Full stack software engineer with 6 years building and scaling production systems in Python, React, Java, and AWS across MedTech, FinTech, and eCommerce—from clinical analytics and regulated health data at Medsix, to brokerage APIs and compliance-heavy finance at DriveWealth, to high-volume marketplace and logistics platforms at Ingram Micro. Comfortable joining early-stage MedTech or FinTech teams with 0→1 ownership. I ship ML/AI in production (deterministic patterns, RAG-style grounding), run tight code review for AI-generated changes, and partner across teams for quality.';
+  'Full stack software engineer with 6 years building and scaling production systems in Python, React, Java, and AWS across MedTech, FinTech, and eCommerce, from clinical analytics and regulated health data at Medsix, to brokerage APIs and compliance-heavy finance at DriveWealth, to high-volume marketplace and logistics platforms at Ingram Micro. Comfortable joining early-stage MedTech or FinTech teams with 0→1 ownership. I ship ML/AI in production (deterministic patterns, RAG-style grounding), run tight code review for AI-generated changes, and partner across teams for quality.';
 
 export const experience = [
   {
@@ -44,7 +44,7 @@ export const experience = [
     role: 'Software Engineer (Python + Full-Stack)',
     bullets: [
       'Django microservices for marketplace (users, inventory, orders, payments); partitioned SQL and stored procedures for heavy transactional workloads.',
-      'Spring Boot on EKS (orders, catalog, auth)—99.9% uptime, 1k+ daily transactions; Terraform + EKS migration to standardize releases and remove environment drift.',
+      'Spring Boot on EKS (orders, catalog, auth): 99.9% uptime, 1k+ daily transactions; Terraform + EKS migration to standardize releases and remove environment drift.',
     ],
   },
 ];
@@ -54,7 +54,7 @@ export const projects = [
     title: 'Meta balance (facebookresearch)',
     tags: 'Python · Pytest · Causal inference',
     description:
-      'Contributor on balance #504: regression test for CBPS rank-deficient SVD handling—locking down existing matrix prep behavior flagged with an inline TODO.',
+      'Contributor on balance #504: regression test for CBPS rank-deficient SVD handling, locking down existing matrix prep behavior flagged with an inline TODO.',
     github: 'https://github.com/facebookresearch/balance/issues/504',
     demo: null,
   },
@@ -141,7 +141,7 @@ export const skillGroups = [
 export const educationItems = [
   {
     strong: 'Northeastern University',
-    text: ' — M.S. Computer Science (2021–2023). Coursework: databases, algorithms, data mining, ML, NLP.',
+    text: ', M.S. Computer Science (2021–2023). Coursework: databases, algorithms, data mining, ML, NLP.',
   },
   {
     text: 'AWS Certified Cloud Practitioner (in progress). Best Performer of the Year, Ingram Micro (2019). Led juniors on a Django + NLP resume classifier (90.25% accuracy).',

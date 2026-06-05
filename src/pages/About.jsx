@@ -18,11 +18,11 @@ export default function About() {
         <p className="about-lead">{aboutIntro}</p>
         <p className="about-context">
           Across <strong>MedTech</strong>, <strong>FinTech</strong>, and{' '}
-          <strong>eCommerce</strong>, the stack shifts—but the bar stays the same: systems
+          <strong>eCommerce</strong>, the stack shifts, but the bar stays the same: systems
           people can rely on, and teammates who know what shipped and why.
         </p>
         <p className="about-beyond-link">
-          <Link to="/beyond-code">Beyond the Code</Link> — how half marathon training shapes the
+          <Link to="/beyond-code">Beyond the Code</Link>: how half marathon training shapes the
           way I build software.
         </p>
       </header>

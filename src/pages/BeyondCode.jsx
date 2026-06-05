@@ -45,7 +45,7 @@ export default function BeyondCode() {
             Race notes
           </h2>
           <p className="stats-note">
-            The numbers are part of the story—not the whole story. Update these as the miles add up.
+            The numbers are part of the story, not the whole story. Update these as the miles add up.
           </p>
           <div className="race-stats" role="list">
             {raceStats.map((stat) => (
@@ -62,7 +62,7 @@ export default function BeyondCode() {
             On the road &amp; off
           </h2>
           <p className="gallery-lead">
-            Moments from training and race weekends—each caption is a small piece of the same mindset I bring to work.
+            Moments from training and race weekends; each caption is a small piece of the same mindset I bring to work.
           </p>
           <ImageGallery photos={photoGallery} />
         </section>
