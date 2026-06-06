@@ -3,7 +3,7 @@ export const RESUME_URL = '/Ashok_More_Resume.pdf';
 export const profile = {
   name: 'Ashok S. More',
   title: 'Full Stack Software Engineer',
-  credentials: 'Open-source contributor · Meta balance',
+  credentials: 'Open-source contributor',
   tagline:
     'I build production systems in Python, Java, and React; contribute tests and fixes to open source when I can; and run half marathons on the side.',
   subtitle: 'MedTech · FinTech · eCommerce · Python · React · AWS · ML / AI',
@@ -51,6 +51,17 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: 'Lighthouse — post-discharge heart failure monitor',
+    tags:
+      'May 2026 · 2nd place · Healthcare Agentic AI Hackathon · Harvard Innovation Labs · Agentic AI · Voice/Chat · Clinician dashboard · NVIDIA Nemotron · Nebius · BOSTechWeek',
+    description:
+      'Hackathon prototype built in 5–6 hours: Lighthouse, an agentic post-discharge monitor for heart failure patients with daily weight and symptom check-ins, protocol-based escalation, and clinician alerts before preventable readmission. Wired Harbor (voice/chat agent) to a live clinician dashboard so every check-in logs structured vitals and escalations surface with clear rationale; human clinicians always make the medical call.',
+    github: null,
+    link: 'https://www.linkedin.com/in/ashok-more/',
+    linkLabel: 'LinkedIn',
+    demo: null,
+  },
   {
     title: 'Meta balance (facebookresearch)',
     tags: 'Python · Pytest · Causal inference',
@@ -145,7 +156,7 @@ export const educationItems = [
     text: ', M.S. Computer Science (2021–2023). Coursework: databases, algorithms, data mining, ML, NLP.',
   },
   {
-    text: 'AWS Certified Cloud Practitioner (in progress). Best Performer of the Year, Ingram Micro (2019). Led juniors on a Django + NLP resume classifier (90.25% accuracy).',
+    text: 'AWS Certified Cloud Practitioner (in progress). Best Performer of the Year, Ingram Micro (2019). Led juniors on a Django + NLP resume classifier (90.25% accuracy). 2nd place, Healthcare Agentic AI Hackathon, Harvard Innovation Labs (2026).',
   },
 ];
 

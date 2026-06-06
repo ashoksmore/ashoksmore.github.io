@@ -1,5 +1,5 @@
 export const aboutIntro =
-  'I’m a full stack engineer who grew up writing code in India, sharpened the craft at Northeastern, and now builds clinical analytics at Medsix in Boston. I care about systems that hold up under real load and about the people on the other side of the screen. Outside day jobs, I contribute to open source, recently on Meta’s balance library (causal weighting / CBPS test coverage).';
+  'I’m a full stack engineer who grew up writing code in India, sharpened the craft at Northeastern, and now builds clinical analytics at Medsix in Boston. I care about systems that hold up under real load and about the people on the other side of the screen. Outside day jobs, I contribute to open source, recently on Meta’s balance library (causal weighting / CBPS test coverage). Recently placed 2nd at the Healthcare Agentic AI Hackathon at Harvard Innovation Labs, building an agentic post-discharge monitor with a clinician-facing escalation dashboard.';
 
 export const journeyTimeline = [
   {
