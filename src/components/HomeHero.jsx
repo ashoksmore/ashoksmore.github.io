@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { profile } from '../data/content';
+import FluidHeroBackground from './FluidHeroBackground';
 import StatCounter from './StatCounter';
 import HeroStatText from './HeroStatText';
 
@@ -14,6 +15,7 @@ export default function HomeHero() {
 
   return (
     <section className="home-hero" aria-labelledby="hero-name">
+      <FluidHeroBackground />
       <div className="home-hero-inner">
         <div className="home-hero-content">
           <p className="home-hero-eyebrow">{profile.relocationNote}</p>
