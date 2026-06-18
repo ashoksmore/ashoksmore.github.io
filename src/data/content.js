@@ -60,7 +60,7 @@ export const projects = [
     github: null,
     link: 'https://www.linkedin.com/in/ashok-more/',
     linkLabel: 'LinkedIn',
-    demo: null,
+    demo: 'https://lighthouse-health.onrender.com/',
   },
   {
     title: 'Meta balance (facebookresearch)',
