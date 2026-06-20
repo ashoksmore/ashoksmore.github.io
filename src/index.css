@@ -809,14 +809,10 @@ section:last-child { margin-bottom: 0; }
 .exp-card li:last-child { margin-bottom: 0; }
 
 /* Projects */
-.projects-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-}
-
-@media (max-width: 640px) {
-  .projects-grid { grid-template-columns: 1fr; }
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .project-card {
@@ -826,15 +822,18 @@ section:last-child { margin-bottom: 0; }
   padding: 20px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  margin-bottom: 1rem;
   box-shadow: var(--shadow-card);
-  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.project-card:last-child {
+  margin-bottom: 0;
 }
 
 .project-card:hover {
   box-shadow: var(--shadow-card-hover);
   border-color: #cbd5e1;
-  transform: translateY(-2px);
 }
 
 .project-card h3 {
@@ -856,7 +855,6 @@ section:last-child { margin-bottom: 0; }
   margin: 0 0 1rem;
   font-size: 0.92rem;
   color: var(--color-text-muted);
-  flex-grow: 1;
 }
 
 .project-actions {

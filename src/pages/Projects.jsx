@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section className="projects" aria-labelledby="projects-heading">
       <SectionHeading id="projects-heading">Projects</SectionHeading>
-      <div className="projects-grid">
+      <div className="projects-list">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
