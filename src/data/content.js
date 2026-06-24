@@ -38,7 +38,8 @@ export const experience = [
   {
     company: 'DriveWealth, Jersey City NJ (FinTech)',
     dates: '06/2022 – 12/2022',
-    role: 'Software Engineering API Intern (Python + Java)',
+    role: 'Software Engineer, API Intern (Python + Java)',
+    roleNote: 'Full-time co-op — backend & infra ownership on production APIs',
     bullets: [
       'Django analytics on 500GB+ monthly API logs for millions of investor accounts; React + Material-UI internal ops dashboard.',
       'Java Spring Boot brokerage APIs on AWS for 100+ partners; Redis sessions at 99.99% availability; Okta/JWT security aligned to FINRA expectations.',

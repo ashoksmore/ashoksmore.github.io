@@ -798,6 +798,14 @@ section:last-child { margin-bottom: 0; }
   color: var(--color-accent);
 }
 
+.exp-role-note {
+  margin: -0.35rem 0 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-soft);
+  line-height: 1.45;
+}
+
 .exp-card ul {
   margin: 0;
   padding-left: 1.15rem;
