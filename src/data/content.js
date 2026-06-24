@@ -2,10 +2,9 @@ export const RESUME_URL = '/Ashok_More_Resume.pdf';
 
 export const profile = {
   name: 'Ashok S. More',
-  title: 'Full Stack Software Engineer',
-  credentials: 'Open-source contributor',
+  title: 'Full-stack engineer building production AI systems that hold up under real load',
   tagline:
-    'I build production systems in Python, Java, and React; contribute tests and fixes to open source when I can; and run half marathons on the side.',
+    'MedTech, FinTech, and eCommerce — same bar every time: systems people can rely on, and AI shipped carefully, not just quickly.',
   subtitle: 'MedTech · FinTech · eCommerce · Python · React · AWS · ML / AI',
   relocationNote: 'Open to relocation in the United States',
   location: 'Boston, MA',
@@ -15,6 +14,12 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/ashok-more/',
   github: 'https://github.com/ashoksmore',
 };
+
+export const heroStats = [
+  { target: 6, suffix: '', label: 'Years experience' },
+  { target: 3, suffix: '', label: 'Industries' },
+  { target: 3, suffix: '', label: 'GenAI projects shipped' },
+];
 
 export const aboutText =
   'Full stack software engineer with 6 years building and scaling production systems in Python, React, Java, and AWS across MedTech, FinTech, and eCommerce, from clinical analytics and regulated health data at Medsix, to brokerage APIs and compliance-heavy finance at DriveWealth, to high-volume marketplace and logistics platforms at Ingram Micro. Comfortable joining early-stage MedTech or FinTech teams with 0→1 ownership. I ship ML/AI in production (deterministic patterns, RAG-style grounding), run tight code review for AI-generated changes, and partner across teams for quality.';

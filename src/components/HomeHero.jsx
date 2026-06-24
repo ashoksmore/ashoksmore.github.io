@@ -1,14 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { profile } from '../data/content';
+import { heroStats, profile } from '../data/content';
 import FluidHeroBackground from './FluidHeroBackground';
 import StatCounter from './StatCounter';
-import HeroStatText from './HeroStatText';
-
-const numericStats = [
-  { target: 6, suffix: '', label: 'Years experience' },
-  { target: 3, suffix: '', label: 'Industries' },
-];
 
 export default function HomeHero() {
   const [imgSrc, setImgSrc] = useState('/headshot.jpg');
@@ -29,10 +23,9 @@ export default function HomeHero() {
           <p className="home-hero-tagline">{profile.tagline}</p>
 
           <div className="hero-stats" role="group" aria-label="Career highlights">
-            {numericStats.map((stat) => (
+            {heroStats.map((stat) => (
               <StatCounter key={stat.label} {...stat} />
             ))}
-            <HeroStatText value="GenAI shipped" />
           </div>
 
           <div className="home-hero-ctas">
