@@ -73,6 +73,8 @@ export const projects = [
     demo: 'https://lighthouse-health.onrender.com/login',
     link: 'https://lighthouse-health.onrender.com/clinician/login',
     linkLabel: 'Clinician UI',
+    linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:7468680888155881473/',
+    linkedinLabel: 'Hackathon post',
   },
   {
     title: 'Meta balance (facebookresearch)',

@@ -8,8 +8,10 @@ export default function ProjectCard({
   demo,
   link,
   linkLabel,
+  linkedin,
+  linkedinLabel = 'LinkedIn',
 }) {
-  const hasActions = github || link || demo;
+  const hasActions = github || link || demo || linkedin;
 
   return (
     <article className="project-card">
@@ -34,6 +36,11 @@ export default function ProjectCard({
           {link && linkLabel && (
             <a className="btn" href={link} target="_blank" rel="noopener noreferrer">
               {linkLabel}
+            </a>
+          )}
+          {linkedin && (
+            <a className="btn" href={linkedin} target="_blank" rel="noopener noreferrer">
+              {linkedinLabel}
             </a>
           )}
           {github && (
