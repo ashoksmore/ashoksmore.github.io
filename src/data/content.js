@@ -52,15 +52,21 @@ export const experience = [
 
 export const projects = [
   {
-    title: 'Lighthouse — post-discharge heart failure monitor',
+    title: 'Lighthouse Health',
+    subtitle: 'AI post-discharge monitoring for heart failure',
     tags:
-      'May 2026 · 2nd place · Healthcare Agentic AI Hackathon · Harvard Innovation Labs · Agentic AI · Voice/Chat · Clinician dashboard · NVIDIA Nemotron · Nebius · BOSTechWeek',
+      'May 2026 · 2nd place · Harvard Innovation Labs · React · Express · Retell AI · Render · NVIDIA NemoClaw · Nebius Nemotron',
     description:
-      'Hackathon prototype built in 5–6 hours: Lighthouse, an agentic post-discharge monitor for heart failure patients with daily weight and symptom check-ins, protocol-based escalation, and clinician alerts before preventable readmission. Wired Harbor (voice/chat agent) to a live clinician dashboard so every check-in logs structured vitals and escalations surface with clear rationale; human clinicians always make the medical call.',
-    github: null,
-    link: 'https://www.linkedin.com/in/ashok-more/',
-    linkLabel: 'LinkedIn',
-    demo: 'https://lighthouse-health.onrender.com/',
+      'Harbor (voice + chat agent) collects daily weight and symptoms, applies clinical protocol, and escalates high-risk patients to nurses before readmission. Demo: patient mark/demo · clinician nurse/demo.',
+    highlights: [
+      'Live clinician dashboard with population view, timelines, and escalation cards',
+      'NemoClaw guardrails enforce clinical policy before dashboard updates',
+      'Deployed on Render with Retell webhooks and webhook signature verification',
+    ],
+    github: 'https://github.com/ashoksmore/lighthouse-health',
+    demo: 'https://lighthouse-health.onrender.com/login',
+    link: 'https://lighthouse-health.onrender.com/clinician/login',
+    linkLabel: 'Clinician UI',
   },
   {
     title: 'Meta balance (facebookresearch)',
